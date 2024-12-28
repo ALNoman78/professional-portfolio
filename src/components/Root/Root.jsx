@@ -8,7 +8,7 @@ const Root = () => {
 
     const navigation = useNavigation()
     return (
-        <div>
+        <div className='md:max-w-7xl mx-auto'>
             <Home></Home>
             {
                 navigation.state === 'loading' ? <ThreeDots
