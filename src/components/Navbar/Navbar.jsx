@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Navbar = props => {
+const Navbar = () => {
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
