@@ -11,6 +11,7 @@ import Home from './components/Home/Home.jsx';
 import About from './components/About/About.jsx';
 import ContactForm from './components/ContactForm/Contact.jsx';
 import Projects from './components/Projects/Projects.jsx';
+import ContactSubmit from './components/ContactSubmit/ContactSubmit.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
     children : [
       {
         path : '/',
-        element : <Home></Home>
+        element : <Home></Home>,
       },
       {
         path : '/about',
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path : '/projects',
         element : <Projects></Projects>
+      },
+      {
+        path : '/submit',
+        element : <ContactSubmit></ContactSubmit>
       }
     ]
   },

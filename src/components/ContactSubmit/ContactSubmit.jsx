@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ContactSubmit = props => {
+const ContactSubmit = () => {
     return (
         <div>ContactSubmit</div>
     )

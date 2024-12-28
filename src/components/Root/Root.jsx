@@ -1,15 +1,15 @@
-import PropTypes from 'prop-types'
 import Home from '../Home/Home'
 import { Outlet, useNavigation } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import { ThreeDots } from 'react-loader-spinner'
+import Navbar from '../Navbar/Navbar'
 
 const Root = () => {
 
     const navigation = useNavigation()
     return (
         <div className='md:max-w-7xl mx-auto'>
-            <Home></Home>
+            <Navbar></Navbar>
             {
                 navigation.state === 'loading' ? <ThreeDots
                         visible={true}
