@@ -8,9 +8,9 @@ const ContactForm = () => {
     const [email, setEmail] = useState('');
     const firstNameRef = useRef(null);
 
-    useEffect(() => {
-        firstNameRef.current.focus();
-    }, []);
+    // useEffect(() => {
+    //     firstNameRef.current.focus();
+    // }, []);
 
     const handleEmail = (e) => {
         setEmail(e.target.value);
@@ -23,7 +23,8 @@ const ContactForm = () => {
 
 return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div
+        {/* there is form bug */}
+        {/* <div
             aria-hidden="true"
             className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         >
@@ -34,7 +35,7 @@ return (
                 }}
                 className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
             />
-        </div>
+        </div> */}
         <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Contact Me</h2>
             <p className="mt-2 text-lg/8 text-gray-600">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p>
