@@ -3,6 +3,7 @@ import { Outlet, useNavigation } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import { ThreeDots } from 'react-loader-spinner'
 import Navbar from '../Navbar/Navbar'
+import Index from '../NewBanner/Index'
 
 const Root = () => {
 
@@ -24,7 +25,7 @@ const Root = () => {
                     :
                     <Outlet></Outlet>
             }
-            <Footer></Footer>
+            <Index></Index>
         </div>
     )
 }

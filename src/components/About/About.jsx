@@ -1,8 +1,11 @@
-import PropTypes from 'prop-types'
+import PasswordInput from "../PasswordInput/PasswordInput"
 
 const About = () => {
     return (
-        <div>About</div>
+        <div>
+            <h2>This is about</h2>
+            <PasswordInput></PasswordInput>
+        </div>
     )
 }
 

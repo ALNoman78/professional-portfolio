@@ -1,9 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import Index from '../NewBanner/Index'
 
-const Projects = props => {
+const Projects = () => {
     return (
-        <div>Projects</div>
+        <div>
+            <h2>Projects</h2>
+            {/* <Index></Index> */}
+        </div>
     )
 }
 

@@ -1,3 +1,4 @@
+import Index from '../TextAnimate/TextAnimate'
 import TextAnimate from '../TextAnimate/TextAnimate'
 
 const Banner = () => {
@@ -16,7 +17,8 @@ const Banner = () => {
                     <button className="btn btn-primary">Get Started</button>
                 </div>
             </div>
-            <TextAnimate></TextAnimate>
+            {/* <TextAnimate></TextAnimate> */}
+            <Index></Index>
         </div>
     )
 }
