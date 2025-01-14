@@ -22,12 +22,14 @@ const Index = () => {
 
                 </div>
                 <article className="text-white pt-2 w-2/3 mx-auto block text-center z-10 relative">
-                    <h1 className="text-center text-5xl text-white font-medium py-3">
+                    <h1 className="text-center text-2xl md:text-5xl text-white font-medium py-3">
                         Abdullah AL Noman
                     </h1>
+                    <p className='text-sm md:text-xl font-medium'>
                     It is a modern and minimalist UI component library designed to
                     simplify the process of building responsive and visually appealing web
                     interfaces.
+                    </p>
                 </article>
             </div>
         </>
