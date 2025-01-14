@@ -35,8 +35,8 @@ const ScrollBaseAnimation = ({ delay = 0, baseVelocity = 1, className = '', chil
       className={`overflow-hidden whitespace-nowrap relative ${className}`}
       style={{ display: 'flex', width: '100%' }}
     >
-      <div className='inline-block pr-[50%] bg-red-500 p-10 rounded-xl'>{children}</div>
-      <div className='inline-block pr-[50%] bg-violet-400 rounded-xl p-10'>{children}</div>
+      <div className='inline-block md:pr-[50%] bg-white backdrop-blur-lg p-10 rounded-xl'>{children}</div>
+      <div className='inline-block md:pr-[50%] bg-violet-400 rounded-xl p-10'>{children}</div>
     </div>
   );
 };

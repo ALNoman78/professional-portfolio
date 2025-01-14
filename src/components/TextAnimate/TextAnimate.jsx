@@ -8,7 +8,7 @@ const Index = () => {
                 baseVelocity={-3}
                 className="font-bold tracking-[-0.07em] leading-[90%] text-xl"
             >
-                Star the repo if you like it
+                HTML , CSS , JavaScript , REACT  JS , TailwindCSS , daisyUi , Firebase
             </ScrollBaseAnimation>
             <ScrollBaseAnimation
                 delay={500}
