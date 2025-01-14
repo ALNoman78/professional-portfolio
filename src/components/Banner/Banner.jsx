@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import TextAnimate from '../TextAnimate/TextAnimate'
 
 const Banner = () => {
     return (
@@ -16,6 +16,7 @@ const Banner = () => {
                     <button className="btn btn-primary">Get Started</button>
                 </div>
             </div>
+            <TextAnimate></TextAnimate>
         </div>
     )
 }
