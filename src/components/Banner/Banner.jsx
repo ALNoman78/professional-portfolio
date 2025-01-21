@@ -1,5 +1,4 @@
 import Index from '../TextAnimate/TextAnimate'
-import TextAnimate from '../TextAnimate/TextAnimate'
 
 const Banner = () => {
     return (
