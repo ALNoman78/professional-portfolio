@@ -28,12 +28,17 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            {
-                                list
-                            }
+                        {
+                            list
+                        }
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <a className="btn btn-ghost text-xl">
+                    <div  className='flex items-center font-mono text-2xl'>
+                        <code>&lt; / &gt;</code>
+                        <span style={{ marginLeft: "0.5rem" }}>Noman</span>
+                    </div>
+                </a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
