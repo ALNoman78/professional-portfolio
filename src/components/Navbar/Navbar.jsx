@@ -36,7 +36,7 @@ const Navbar = () => {
                 <a className="btn btn-ghost text-xl">
                     <div  className='flex items-center font-mono text-2xl'>
                         <code>&lt; / &gt;</code>
-                        <span style={{ marginLeft: "0.5rem" }}>Noman</span>
+                        <span style={{ marginLeft: "0.5rem" }}>Noman </span>
                     </div>
                 </a>
             </div>
