@@ -2,7 +2,7 @@ import ScrollBaseAnimation from '../core/scroll-text-marque'
 
 const Index = () => {
     return (
-        <div className="h-[500px] grid place-content-center">
+        <div className="md:h-[300px] grid place-content-center">
             <ScrollBaseAnimation
                 delay={500}
                 baseVelocity={-3}
