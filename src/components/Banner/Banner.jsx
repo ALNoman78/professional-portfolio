@@ -1,6 +1,8 @@
 // import TextAnimate from '../TextAnimate/TextAnimate'
 import profileImage from '../../assets/linkdIn.jpg'
 import BannerImage from '../../assets/banner.png'
+import { FaArrowRight } from "react-icons/fa";
+import Review from '../Review/Review';
 
 const Banner = () => {
     return (
@@ -50,16 +52,28 @@ const Banner = () => {
                             </div>
                         </div>
                         {/* icon end */}
-                        <h1 className="mb-5 my-2 text-white md:text-[64px] font-bold">Breathe better , <br /> <span>live better!</span></h1>
+                        <h1 className="mb-5 my-2 text-white md:text-[64px] font-semibold">Breathe better , <br /> <span>live better!</span></h1>
                         <p className="mb-5 text-white">
                             Discover how effortless breathing can enhance your life.
                             <br /> Take the first step Today!
                         </p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <div className="navbar-end">
+                            <a className="btn bg-[#FF6600] text-white rounded-full">Shop Now
+                                <FaArrowRight />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            {/* review section added */}
+            <div className='md:w-10/12 mx-auto bg-white'>
+                <h2 className="text-[36px] font-semibold my-3">Customer Feedback</h2>
+            </div>
+            <div className="flex flex-col items-center">
+                {[...Array(3)].map((_, index) => (
+                    <Review key={index} />
+                ))}
+            </div>
         </div>
     )
 }
