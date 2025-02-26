@@ -4,13 +4,15 @@ import Footer from '../Footer/Footer'
 import { ThreeDots } from 'react-loader-spinner'
 import Navbar from '../Navbar/Navbar'
 import Index from '../NewBanner/Index'
+import NewNav from '../NewNav/NewNav'
 
 const Root = () => {
 
     const navigation = useNavigation()
     return (
-        <div className='md:max-w-7xl mx-auto'>
-            <Navbar></Navbar>
+        <div className='font-Montserrat'>
+            {/* <Navbar></Navbar> */}
+            <NewNav></NewNav>
             {
                 navigation.state === 'loading' ? <ThreeDots
                         visible={true}
@@ -25,7 +27,7 @@ const Root = () => {
                     :
                     <Outlet></Outlet>
             }
-            <Index></Index>
+            {/* <Index></Index> */}
         </div>
     )
 }
