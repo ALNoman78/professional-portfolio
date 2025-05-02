@@ -1,6 +1,8 @@
+import { useEffect, useState } from "react"
 import PasswordInput from "../PasswordInput/PasswordInput"
 
 const About = () => {
+    
     return (
         <div>
             <h2>This is about</h2>
