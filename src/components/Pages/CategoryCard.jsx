@@ -6,8 +6,7 @@ const CategoryCard = () => {
     const { data: news } = useLoaderData()
     return (
         <div className='p-4'>
-            <h2>CategoryCard {news.length}</h2>
-            <div className='grid md:grid-cols-3 gap-3 '>
+            <div className='grid md:grid-cols-1 gap-3 '>
                 {
                     news.map((singleNews, idx) => (
                         <NewsCard key={idx} news={singleNews}></NewsCard>

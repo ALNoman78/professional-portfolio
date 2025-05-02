@@ -6,51 +6,40 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
-import Root from './components/Root/Root.jsx';
-import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
-import Home from './components/Home/Home.jsx';
-import About from './components/About/About.jsx';
-import ContactForm from './components/ContactForm/Contact.jsx';
-import Projects from './components/Projects/Projects.jsx';
-import ContactSubmit from './components/ContactSubmit/ContactSubmit.jsx';
 import CategoryCard from './components/Pages/CategoryCard.jsx';
+import HomePage from './components/Layouts/HomePage.jsx';
+import ErrorPage from './components/Pages/ErrorPage.jsx';
+import About from './components/Pages/About.jsx';
+import ContactForm from './components/Pages/Contact.jsx';
+import Projects from './components/Pages/Projects.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>,
-    errorElement: <ErrorPage></ErrorPage>,
+    element: <HomePage></HomePage>,
     children: [
       {
-        path: '/',
-        element: <Home></Home>,
-        children:[{
-          path: '/category/01',
-          element: <Navigate to={'/category/01'}></Navigate>
-        }]
+        path: "",
+        element: <Navigate to={'/category/01'}></Navigate>
       },
       {
         path: '/category/:id',
-        loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/news/category/${params.id}`),
+        loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/news/category/${params.id}`),
         element: <CategoryCard></CategoryCard>
-      },
-{
-  path: '/about',
-    element : <About></About>,
-      },
-{
-  path: '/contact',
-    element : <ContactForm></ContactForm>
-},
-{
-  path: '/projects',
-    element : <Projects></Projects>
-},
-{
-  path: '/submit',
-    element : <ContactSubmit></ContactSubmit>
-}
-    ]
+      }
+    ],
+  },
+  {
+    path: '/about',
+    element: <About></About>
+  },
+  {
+    path: '/contact',
+    element: <ContactForm></ContactForm>
+  },
+  {
+    path: '/projects',
+    element: <Projects></Projects>
   },
 ]);
 

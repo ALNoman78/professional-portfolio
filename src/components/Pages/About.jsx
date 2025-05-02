@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import PasswordInput from "../PasswordInput/PasswordInput"
+import PasswordInput from "../Pages/PasswordInput"
 
 const About = () => {
     
